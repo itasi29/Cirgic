@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4e07442c-1192-4f8c-8359-c6cea9255e16}</ProjectGuid>
+    <RootNamespace>Turisumo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cirgic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir);プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="File\FileEffekseer.cpp" />
+    <ClCompile Include="File\FontSystem.cpp" />
+    <ClCompile Include="Object\Item\ItemKinokoTriple.cpp" />
+    <ClCompile Include="Object\Item\ItemBox.cpp" />
+    <ClCompile Include="MyEngine\Physics\CCell.cpp" />
+    <ClCompile Include="MyEngine\Physics\CLiner8TreeManager.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderTreeObject.cpp" />
+    <ClCompile Include="Object\Item\ItemCarapaceRed.cpp" />
+    <ClCompile Include="Object\Item\ItemCarapaceGreen.cpp" />
+    <ClCompile Include="Object\Item\ItemCarapaceBase.cpp" />
+    <ClCompile Include="Object\Item\ItemBanana.cpp" />
+    <ClCompile Include="Object\Item\ItemManager.cpp" />
+    <ClCompile Include="Object\Item\ItemKinoko.cpp" />
+    <ClCompile Include="Object\Item\ItemCoin.cpp" />
+    <ClCompile Include="Object\Car\CarPlayer.cpp" />
+    <ClCompile Include="Object\Car\CarManager.cpp" />
+    <ClCompile Include="Object\ObjectManager.cpp" />
+    <ClCompile Include="Object\CheckPoint\CheckPointManager.cpp" />
+    <ClCompile Include="Object\CheckPoint\CheckPoint.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderLine.cpp" />
+    <ClCompile Include="Object\Stage\JumpPoint.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderBox.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderTerrain.cpp" />
+    <ClCompile Include="MyEngine\Physics\CollideHelp.cpp" />
+    <ClCompile Include="Common\Camera.cpp" />
+    <ClCompile Include="Object\Car\CarBase.cpp" />
+    <ClCompile Include="Object\Item\ItemBase.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderCapsule.cpp" />
+    <ClCompile Include="Common\Application.cpp" />
+    <ClCompile Include="Common\Input.cpp" />
+    <ClCompile Include="Common\SoundSystem.cpp" />
+    <ClCompile Include="File\FileBase.cpp" />
+    <ClCompile Include="File\FileImage.cpp" />
+    <ClCompile Include="File\FileManager.cpp" />
+    <ClCompile Include="File\FileModel.cpp" />
+    <ClCompile Include="File\FileSound.cpp" />
+    <ClCompile Include="Geometry\Easing.cpp" />
+    <ClCompile Include="Geometry\Matrix4x4.cpp" />
+    <ClCompile Include="Geometry\Quaternion.cpp" />
+    <ClCompile Include="Geometry\Vec3.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Geometry\MathHelp.cpp" />
+    <ClCompile Include="MyEngine\DebugDraw.cpp" />
+    <ClCompile Include="MyEngine\Physics\Collidable.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderBase.cpp" />
+    <ClCompile Include="MyEngine\Physics\ColliderSphere.cpp" />
+    <ClCompile Include="MyEngine\Physics\Physics.cpp" />
+    <ClCompile Include="MyEngine\Physics\Rigidbody.cpp" />
+    <ClCompile Include="Object\Object3D.cpp" />
+    <ClCompile Include="Race\RaceManager.cpp" />
+    <ClCompile Include="File\RankingSystem.cpp" />
+    <ClCompile Include="Scene\SceneOption.cpp" />
+    <ClCompile Include="Scene\SceneSelect.cpp" />
+    <ClCompile Include="Scene\SceneResult.cpp" />
+    <ClCompile Include="Scene\SceneBase.cpp" />
+    <ClCompile Include="Scene\SceneDebug.cpp" />
+    <ClCompile Include="Scene\SceneMain.cpp" />
+    <ClCompile Include="Scene\SceneManager.cpp" />
+    <ClCompile Include="Scene\SceneTitle.cpp" />
+    <ClCompile Include="Object\Stage\Road.cpp" />
+    <ClCompile Include="Object\Stage\SystemWall.cpp" />
+    <ClCompile Include="Object\Stage\StageManager.cpp" />
+    <ClCompile Include="Utility\StringUtility.cpp" />
+    <ClCompile Include="Geometry\Vec2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\CommandList.h" />
+    <ClInclude Include="File\FileEffekseer.h" />
+    <ClInclude Include="File\FileID.h" />
+    <ClInclude Include="File\FontSystem.h" />
+    <ClInclude Include="Object\Item\ItemKinokoTriple.h" />
+    <ClInclude Include="Object\Item\ItemBox.h" />
+    <ClInclude Include="MyEngine\Physics\CCell.h" />
+    <ClInclude Include="MyEngine\Physics\CLiner8TreeManager.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderTreeObject.h" />
+    <ClInclude Include="Object\Item\ItemCarapaceRed.h" />
+    <ClInclude Include="Object\Item\ItemCarapaceGreen.h" />
+    <ClInclude Include="Object\Item\ItemCarapaceBase.h" />
+    <ClInclude Include="Object\Item\ItemBanana.h" />
+    <ClInclude Include="Object\Item\ItemManager.h" />
+    <ClInclude Include="Object\Item\ItemKinoko.h" />
+    <ClInclude Include="Object\Item\ItemCoin.h" />
+    <ClInclude Include="Object\Car\CarPlayer.h" />
+    <ClInclude Include="Object\Car\CarManager.h" />
+    <ClInclude Include="Object\Item\Items.h" />
+    <ClInclude Include="Object\ObjectManager.h" />
+    <ClInclude Include="Object\CheckPoint\CheckPointManager.h" />
+    <ClInclude Include="Object\CheckPoint\CheckPoint.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderLine.h" />
+    <ClInclude Include="Object\Stage\JumpPoint.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderBox.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderTerrain.h" />
+    <ClInclude Include="MyEngine\Physics\CollideHelp.h" />
+    <ClInclude Include="MyEngine\Physics\Colliders.h" />
+    <ClInclude Include="Common\Camera.h" />
+    <ClInclude Include="Object\Car\CarBase.h" />
+    <ClInclude Include="Object\Item\ItemBase.h" />
+    <ClInclude Include="MyEngine\MyEngine.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderCapsule.h" />
+    <ClInclude Include="Common\Application.h" />
+    <ClInclude Include="Common\Game.h" />
+    <ClInclude Include="Common\Input.h" />
+    <ClInclude Include="Common\ObjectTag.h" />
+    <ClInclude Include="Common\SoundSystem.h" />
+    <ClInclude Include="File\FileBase.h" />
+    <ClInclude Include="File\FileImage.h" />
+    <ClInclude Include="File\FileManager.h" />
+    <ClInclude Include="File\FileModel.h" />
+    <ClInclude Include="File\FileSound.h" />
+    <ClInclude Include="Geometry\Easing.h" />
+    <ClInclude Include="Geometry\Geometry.h" />
+    <ClInclude Include="Geometry\Matrix4x4.h" />
+    <ClInclude Include="Geometry\Quaternion.h" />
+    <ClInclude Include="Geometry\Vec3.h" />
+    <ClInclude Include="Geometry\MathHelp.h" />
+    <ClInclude Include="MyEngine\DebugDraw.h" />
+    <ClInclude Include="MyEngine\Physics\Collidable.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderBase.h" />
+    <ClInclude Include="MyEngine\Physics\ColliderSphere.h" />
+    <ClInclude Include="MyEngine\Physics\Physics.h" />
+    <ClInclude Include="MyEngine\Physics\Rigidbody.h" />
+    <ClInclude Include="Object\Object3D.h" />
+    <ClInclude Include="Race\RaceManager.h" />
+    <ClInclude Include="File\RankingSystem.h" />
+    <ClInclude Include="Scene\SceneOption.h" />
+    <ClInclude Include="Scene\SceneSelect.h" />
+    <ClInclude Include="Scene\SceneResult.h" />
+    <ClInclude Include="Scene\SceneBase.h" />
+    <ClInclude Include="Scene\SceneDebug.h" />
+    <ClInclude Include="Scene\SceneMain.h" />
+    <ClInclude Include="Scene\SceneManager.h" />
+    <ClInclude Include="Scene\SceneTitle.h" />
+    <ClInclude Include="Object\Stage\Road.h" />
+    <ClInclude Include="Object\Stage\SystemWall.h" />
+    <ClInclude Include="Object\Stage\StageManager.h" />
+    <ClInclude Include="Utility\Utility.h" />
+    <ClInclude Include="Utility\StringUtility.h" />
+    <ClInclude Include="Geometry\Vec2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
